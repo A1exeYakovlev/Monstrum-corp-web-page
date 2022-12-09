@@ -1,0 +1,538 @@
+@import url('clash-grotesk.css');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    max-width: 100%;
+    min-width: 32rem;
+    background-color: #FFF;
+    color: var(--text-black);
+}
+
+/*---------------------blocks---------------------*/
+
+.container {
+    margin: 0 auto;
+    padding: 0 10rem;
+    max-width: 160rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+}
+
+.rounded-corners {
+    border-radius: 90px 90px 0px 0px;
+
+    &--white {
+        background-color: #fff;
+    }
+
+    &--black {
+        background-color: var(--element-black);
+    }
+}
+
+.headline1 {
+    font-family: 'Clash Grotesk Variable';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 140px;
+    line-height: 90%;
+    text-transform: uppercase;
+    color: var(--text-black);
+}
+
+.headline3 {
+    font-family: 'Clash Grotesk Variable';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 86%;
+    text-transform: uppercase;
+    color: var(--text-black);
+
+    &--color-text2 {
+        color: var(--text-2);
+    }
+
+}
+
+
+.headline4 {
+    font-family: 'Clash Grotesk Variable';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 101%;
+    text-transform: uppercase;
+    color: var(--text-black);
+}
+
+
+.headline4--medium {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 100%;
+}
+
+
+.caption {
+    padding: 10px 25px;
+    height: 50px;
+    letter-spacing: 0em;
+    border: 1px solid var(--text-black);
+    border-radius: 90px;
+}
+
+.text1 {
+    font-family: Clash Grotesk Variable;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    font-style: normal;
+    line-height: 100%;
+    color: var(--text-black);
+}
+
+.text2 {
+    font-family: Clash Grotesk Variable;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 110%;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--text-black);
+}
+
+.link1 {
+    font-family: 'Clash Grotesk Variable';
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 100%;
+    color: var(--text-black);
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 1px var(--text-black) solid;
+}
+
+.link2 {
+    font-family: 'Clash Grotesk Variable';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    color: var(--text-black);
+}
+
+
+.long-button-desk {
+    padding: 20px 81px;
+    height: 100px;
+    font-family: 'Clash Grotesk Variable';
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--text-black);
+    border: 1px solid var(--element-black);
+    border-radius: 74px;
+    background-color: transparent;
+}
+
+/*-------------------------colors-------------------*/
+:root {
+    --text-black: #1D1D1D;
+    --text-white: #fff;
+    --text-1: #0F6DA7;
+    --text-2: #0DC1C2;
+    --background-white: #F4F0E8;
+    --element-black: #121212;
+    --element-black-040: rgba(18, 18, 18, 0.4);
+    --phylosophy-rounded-top: 100px;
+
+
+
+}
+
+
+/*---------------------hero section---------------------*/
+.hero {
+    background-color: var(--text-1);
+    background: url(../img/hero_photo.png) center/cover no-repeat;
+    min-height: calc(100vh + var(--phylosophy-rounded-top));
+
+    &__content {
+        margin: auto;
+        max-width: 940px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: calc(100vh - var(--phylosophy-rounded-top));
+    }
+
+    &__header {
+        min-height: 130px;
+    }
+
+    &__header-inner {
+        padding: 50px 0 14px 0;
+    }
+
+    &__headline1 {
+        margin: 0;
+        text-align: center;
+        color: #FFF;
+    }
+
+    &__logo {
+        margin: 2px 0 0 9px;
+    }
+
+    &__headline4 {
+        margin: 3rem auto 0 auto;
+        max-width: 690px;
+        text-align: center;
+        color: #FFF;
+    }
+
+    &__vline {
+        margin: 5rem auto 0 auto;
+        height: 7.6rem;
+        width: 1px;
+        background-color: #FFF;
+    }
+}
+
+.header {
+    &__nav-column:last-child {
+        margin-right: 4.3rem;
+    }
+
+    &__lang {
+        grid-column: 4/5;
+        justify-self: end;
+    }
+
+    &__lang-btn:not(:last-child) {
+        margin-bottom: 1.5rem;
+    }
+
+    &__lang-btn {
+        color: #fff;
+        font-family: 'Clash Grotesk Variable';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 100%;
+        text-transform: uppercase;
+    }
+}
+
+.logo {}
+
+.logo-img {
+    width: 20rem;
+    height: 2.4rem;
+}
+
+.nav {}
+
+.header {
+
+    &__nav {
+        grid-column: 3/4;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__nav-column {}
+
+    &__nav-item:not(:last-child) {
+        margin-bottom: 1.5rem;
+    }
+
+    &__nav-item {
+        list-style: none;
+        font-family: 'Clash Grotesk Variable';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 100%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        opacity: 0.6;
+    }
+
+    &__nav-column:last-child {
+        margin-bottom: 0;
+    }
+
+    &__lang-btn {}
+}
+
+/*------------------phylosophy--------------------*/
+.phylosophy {
+    margin-top: calc(var(--phylosophy-rounded-top) * -1);
+    padding-top: var(--phylosophy-rounded-top);
+
+    &__inner {
+        display: flex;
+        border-bottom: 1px rgba(18, 18, 18, 0.4) solid;
+    }
+
+    &__caption {
+        flex-shrink: 0;
+        margin-right: 5.3rem;
+        text-align: left;
+        width: 302px;
+    }
+
+    &__content {
+        margin-bottom: 14rem;
+        display: flex;
+        flex-direction: column;
+        width: calc((1045/(1400))*100%);
+
+    }
+
+    &__text1 {
+        text-align: left;
+    }
+
+    &__link-wrap {
+        margin-top: 5rem;
+        display: inline;
+    }
+
+    &__link {
+
+        &::after {
+            display: inline;
+            padding: 0 0 0 26px;
+            content: '';
+            background: url(../img/link_arrow.svg) right center no-repeat;
+            height: 16px;
+            width: 16px;
+        }
+    }
+}
+
+/*------------------projects--------------------*/
+.projects {
+
+    &__inner {
+        grid-template-rows: 18.5rem 42.5rem 35.5rem 7rem 42.5rem 17rem;
+        padding-bottom: 14rem;
+        border-bottom: 1px var(--element-black-040) solid;
+    }
+
+    &__caption {
+        margin-top: 3.5rem;
+        width: 258px;
+    }
+
+    &__item {}
+
+    &__item-expo2020 {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+
+    &__item-giants {
+        grid-row: 2/4;
+        grid-column: 3/5;
+    }
+
+    &__item-pic {}
+
+    &__item-title {
+        margin-top: 2.5rem;
+    }
+
+    &__item-descr {
+        margin-top: 10px;
+        opacity: 70%;
+    }
+
+    &__item-inspiring {
+        margin-top: 13px;
+        grid-row: 3/4;
+        grid-column: 1/2;
+        align-self: center;
+    }
+
+    &__item-inspiring-text {}
+
+    &__item-globe {
+        grid-row: 5/6;
+        grid-column: 1/2;
+    }
+
+    &__item-surfer {
+        grid-row: 5/6;
+        grid-column: 2/3;
+    }
+
+    &__item-plantsVsZ {
+        grid-row: 5/6;
+        grid-column: 4/5;
+    }
+
+    &__btn {
+        grid-row: 6/7;
+        grid-column: 1/5;
+        align-self: end;
+    }
+}
+
+/*------------------awards--------------------*/
+
+.awards {
+
+    &__inner {
+        grid-template-rows: 160px 160px 160px 160px 178px;
+        grid-auto-rows: 160px;
+        padding-bottom: 15rem;
+        border-bottom: 1px var(--element-black-040) solid;
+    }
+
+    &__caption {
+        margin-top: 3.5rem;
+        grid-column: 1/2;
+        grid-row: 1/7;
+        width: 171px;
+        height: 50px;
+    }
+
+    &__item {
+        margin-top: 5rem;
+        grid-column: 2/5;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: baseline;
+        border-bottom: 1px solid var(--element-black-040);
+    }
+
+    &__name {
+        grid-column: 1/3;
+        display: grid;
+        grid-template-columns: 30% 70%;
+
+        h4 {
+            font-style: inherit;
+            font-weight: inherit;
+            font-size: inherit;
+            line-height: inherit;
+        }
+    }
+
+    &__name-year {
+        grid-column: 1/2;
+    }
+
+    &__title-name {
+        grid-column: 2/3;
+        width: 80%;
+    }
+
+    &__details {
+        margin-left: 1.4rem;
+        grid-column: 3/4;
+    }
+
+    &__btn {
+        margin-top: 7rem;
+        width: 100%;
+        grid-column: 2/5;
+    }
+}
+
+/*------------------news--------------------*/
+.news {
+
+    &__inner {
+        padding-bottom: 10rem;
+        border-bottom: 1px var(--element-black-040) solid;
+        grid-template-rows: 185px 85px 550px;
+    }
+
+    &__caption {
+        margin-top: 3.5rem;
+        grid-column: 1/5;
+        width: 133px;
+    }
+
+    &__date {
+        max-width: 94px;
+        overflow-wrap: break-word;
+    }
+
+    &__title {
+        grid-column: 2/4;
+    }
+
+    &__descr {
+        grid-column: 4/5;
+        grid-row: 2/4;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__descr-text {
+        flex: 1 1 auto;
+        padding-right: 35px;
+    }
+
+    &__descr-text p:not(:first-child) {
+        margin-top: 25px;
+    }
+
+    &__pic {
+        grid-column: 1/3;
+        max-width: 550px;
+    }
+
+    &__descr-link {}
+
+    &__view {
+        margin-top: 5rem;
+        min-height: 16.4rem;
+    }
+
+    &__view-link {
+        grid-column: 4/5;
+        height: 24px;
+        width: 123px;
+
+        &::after {
+            display: inline;
+            padding: 0 0 0 26px;
+            content: '';
+            background: url(../img/link_arrow.svg) right center no-repeat;
+            height: 16px;
+            width: 16px;
+        }
+    }
+}
+
+/*------------------footer--------------------*/
+.footer {
+    height: 999px;
+
+}
