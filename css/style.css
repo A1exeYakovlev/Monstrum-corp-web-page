@@ -447,5 +447,105 @@ body {
 
 /*------------------footer--------------------*/
 .footer {
-  height: 999px;
+  min-height: 999px;
+}
+.footer-wrap {
+  vertical-align: center;
+}
+.footer__marquee {
+  min-height: 13.4rem;
+  border-bottom: 1px #fff solid;
+}
+
+.footer-talk {
+  display: flex;
+  padding: 12rem 0;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px #fff solid;
+}
+.footer-talk__title {
+  flex: 1 1 auto;
+  display: inline-block;
+}
+.footer-talk__title--right-img::after {
+  content: "";
+  display: inline-block;
+  margin: 0 0 -4px 6px;
+  background: url(../img/footer__contact-img1.png) right no-repeat;
+  height: 100px;
+  width: 160px;
+}
+.footer-talk__title--left-img {
+  text-align: right;
+}
+.footer-talk__title--left-img::before {
+  content: "";
+  display: inline-block;
+  margin: 0 36px -6px 403px;
+  background: url(../img/footer__contact-img2.png) right no-repeat;
+  height: 100px;
+  width: 160px;
+}
+.footer-talk__btn {
+  flex: 0 0 210px;
+  height: 210px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  border-radius: 50%;
+  border: 1px #fff solid;
+}
+.footer-talk__btn-text {
+  font-family: Clash Grotesk Variable;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  text-transform: uppercase;
+  color: var(--text-white);
+}
+
+.footer-bottom {
+  padding: 5rem 0 2rem 0;
+  min-height: 37.3rem;
+}
+.footer-bottom__logo {
+  display: inline-block;
+  margin-bottom: 2.9rem;
+}
+.footer-bottom__info {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.footer-bottom__tel {
+  margin-bottom: 1.4rem;
+}
+.footer-bottom__mail {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  list-style: none;
+}
+.footer-bottom__mail-item:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+.footer-bottom__adress {
+  flex: 1 1 auto;
+}
+.footer-bottom__copy {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+.footer-bottom__nav {
+  display: flex;
+  justify-content: space-between;
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+.footer-bottom__nav-item:not(:last-child) {
+  margin-bottom: 1.5rem;
 }/*# sourceMappingURL=style.css.map */

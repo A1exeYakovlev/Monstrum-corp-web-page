@@ -539,6 +539,122 @@ body {
 
 /*------------------footer--------------------*/
 .footer {
-    height: 999px;
+    min-height: 999px;
 
+    &-wrap {
+        vertical-align: center;
+    }
+
+    &__marquee {
+        min-height: 13.4rem;
+        border-bottom: 1px #fff solid;
+    }
+}
+
+.footer-talk {
+    display: flex;
+    padding: 12rem 0;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px #fff solid;
+
+    &__title {
+        flex: 1 1 auto;
+        display: inline-block;
+
+        &--right-img::after {
+            content: '';
+            display: inline-block;
+            margin: 0 0 -4px 6px;
+            background: url(../img/footer__contact-img1.png) right no-repeat;
+            height: 100px;
+            width: 160px;
+        }
+
+        &--left-img {
+            text-align: right;
+
+            &::before {
+                content: '';
+                display: inline-block;
+                margin: 0 36px -6px 403px;
+                background: url(../img/footer__contact-img2.png) right no-repeat;
+                height: 100px;
+                width: 160px;
+            }
+        }
+    }
+
+    &__btn {
+        flex: 0 0 210px;
+        height: 210px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100%;
+        border-radius: 50%;
+        border: 1px #fff solid;
+
+        &-text {
+            font-family: Clash Grotesk Variable;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 17px;
+            letter-spacing: 0.03em;
+            text-align: left;
+            text-transform: uppercase;
+            color: var(--text-white);
+        }
+    }
+}
+
+.footer-bottom {
+    padding: 5rem 0 2rem 0;
+    min-height: 37.3rem;
+
+    &__logo {
+        display: inline-block;
+        margin-bottom: 2.9rem;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    &__tel {
+        margin-bottom: 1.4rem;
+    }
+
+    &__mail {
+        grid-column: 3/4;
+        grid-row: 1/2;
+        list-style: none;
+
+        &-item:not(:last-child) {
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    &__adress {
+        flex: 1 1 auto;
+    }
+
+    &__copy {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        grid-column: 4/5;
+        grid-row: 1/2;
+
+        &-item:not(:last-child) {
+            margin-bottom: 1.5rem;
+        }
+    }
 }
