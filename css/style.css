@@ -7,6 +7,18 @@
   box-sizing: border-box;
 }
 
+ul {
+  list-style: none;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -42,7 +54,22 @@ body {
   background-color: var(--element-black);
 }
 
+.menu-font {
+  font-family: "Clash Grotesk Variable";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: var(--text-white);
+  opacity: 0.6;
+}
+.menu-font--opacity1 {
+  opacity: 1;
+}
+
 .headline1 {
+  margin: 0;
   font-family: "Clash Grotesk Variable";
   font-style: normal;
   font-weight: 400;
@@ -50,6 +77,9 @@ body {
   line-height: 90%;
   text-transform: uppercase;
   color: var(--text-black);
+}
+.headline1--white {
+  color: #fff;
 }
 
 .headline3 {
@@ -126,8 +156,7 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
   text-transform: uppercase;
   color: var(--text-black);
 }
@@ -180,7 +209,6 @@ body {
   padding: 50px 0 14px 0;
 }
 .hero__headline1 {
-  margin: 0;
   text-align: center;
   color: #FFF;
 }
@@ -200,9 +228,6 @@ body {
   background-color: #FFF;
 }
 
-.header__nav-column:last-child {
-  margin-right: 4.3rem;
-}
 .header__lang {
   grid-column: 4/5;
   justify-self: end;
@@ -210,21 +235,6 @@ body {
 .header__lang-btn:not(:last-child) {
   margin-bottom: 1.5rem;
 }
-.header__lang-btn {
-  color: #fff;
-  font-family: "Clash Grotesk Variable";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 100%;
-  text-transform: uppercase;
-}
-
-.logo-img {
-  width: 20rem;
-  height: 2.4rem;
-}
-
 .header__nav {
   grid-column: 3/4;
   display: flex;
@@ -233,20 +243,19 @@ body {
 .header__nav-item:not(:last-child) {
   margin-bottom: 1.5rem;
 }
-.header__nav-item {
-  list-style: none;
-  font-family: "Clash Grotesk Variable";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 100%;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  opacity: 0.6;
-}
 .header__nav-column:last-child {
+  margin-right: 4.3rem;
   margin-bottom: 0;
 }
+.header__nav-item {
+  list-style: none;
+}
+
+.logo-img {
+  width: 20rem;
+  height: 2.4rem;
+}
+
 /*------------------phylosophy--------------------*/
 .phylosophy {
   margin-top: calc(var(--phylosophy-rounded-top) * -1);

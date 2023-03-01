@@ -8,6 +8,19 @@
     box-sizing: border-box;
 }
 
+ul {
+    list-style: none;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+
 html {
     font-size: 62.5%;
 }
@@ -45,7 +58,23 @@ body {
     }
 }
 
+.menu-font {
+    font-family: 'Clash Grotesk Variable';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: var(--text-white);
+    opacity: 0.6;
+
+    &--opacity1 {
+        opacity: 1;
+    }
+}
+
 .headline1 {
+    margin: 0;
     font-family: 'Clash Grotesk Variable';
     font-style: normal;
     font-weight: 400;
@@ -53,6 +82,10 @@ body {
     line-height: 90%;
     text-transform: uppercase;
     color: var(--text-black);
+
+    &--white {
+        color: #fff;
+    }
 }
 
 .headline3 {
@@ -195,7 +228,6 @@ body {
     }
 
     &__headline1 {
-        margin: 0;
         text-align: center;
         color: #FFF;
     }
@@ -220,9 +252,6 @@ body {
 }
 
 .header {
-    &__nav-column:last-child {
-        margin-right: 4.3rem;
-    }
 
     &__lang {
         grid-column: 4/5;
@@ -233,58 +262,35 @@ body {
         margin-bottom: 1.5rem;
     }
 
-    &__lang-btn {
-        color: #fff;
-        font-family: 'Clash Grotesk Variable';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 100%;
-        text-transform: uppercase;
-    }
-}
-
-.logo {}
-
-.logo-img {
-    width: 20rem;
-    height: 2.4rem;
-}
-
-.nav {}
-
-.header {
-
     &__nav {
         grid-column: 3/4;
         display: flex;
         justify-content: space-between;
     }
 
-    &__nav-column {}
 
     &__nav-item:not(:last-child) {
         margin-bottom: 1.5rem;
     }
 
-    &__nav-item {
-        list-style: none;
-        font-family: 'Clash Grotesk Variable';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 100%;
-        text-transform: uppercase;
-        color: #FFFFFF;
-        opacity: 0.6;
-    }
-
     &__nav-column:last-child {
+        margin-right: 4.3rem;
         margin-bottom: 0;
     }
 
-    &__lang-btn {}
+    &__nav-item {
+        list-style: none;
+    }
+
 }
+
+
+.logo-img {
+    width: 20rem;
+    height: 2.4rem;
+}
+
+
 
 /*------------------phylosophy--------------------*/
 .phylosophy {
