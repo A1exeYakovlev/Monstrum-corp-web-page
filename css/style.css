@@ -130,8 +130,8 @@ body {
 }
 
 .caption {
+  display: inline-block;
   padding: 1rem 2.5rem;
-  height: 5rem;
   letter-spacing: 0em;
   border: 1px solid var(--text-black);
   border-radius: 9rem;
@@ -139,7 +139,6 @@ body {
 @media (max-width: 47em) {
   .caption {
     padding: 0.6rem 1.5rem;
-    height: 2.8rem;
   }
 }
 
@@ -299,10 +298,9 @@ body {
   display: flex;
 }
 .phylosophy__caption {
-  flex-shrink: 0;
   margin-right: 5.3rem;
-  text-align: left;
-  width: 302px;
+  flex-shrink: 0;
+  place-self: start;
 }
 .phylosophy__content {
   margin-bottom: 14rem;
@@ -374,12 +372,10 @@ body {
 }
 .projects__caption {
   margin-top: 3.5rem;
-  width: 25.8rem;
 }
 @media (max-width: 47em) {
   .projects__caption {
     margin-top: 2rem;
-    width: 14.1rem;
   }
 }
 .projects__item-expo2020 {
@@ -470,8 +466,7 @@ body {
   margin-top: 3.5rem;
   grid-column: 1/2;
   grid-row: 1/7;
-  width: 171px;
-  height: 50px;
+  place-self: start;
 }
 .awards__item {
   margin-top: 5rem;
@@ -517,7 +512,7 @@ body {
 .news__caption {
   margin-top: 3.5rem;
   grid-column: 1/5;
-  width: 133px;
+  place-self: start;
 }
 .news__date {
   max-width: 94px;

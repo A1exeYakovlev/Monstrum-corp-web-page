@@ -140,8 +140,8 @@ body {
 }
 
 .caption {
+  display: inline-block;
   padding: 1rem 2.5rem;
-  height: 5rem;
   letter-spacing: 0em;
   border: 1px solid var(--text-black);
   border-radius: 9rem;
@@ -149,7 +149,6 @@ body {
   // 752px
   @media (max-width: 47em) {
     padding: 0.6rem 1.5rem;
-    height: 2.8rem;
   }
 }
 
@@ -324,10 +323,9 @@ body {
   }
 
   &__caption {
-    flex-shrink: 0;
     margin-right: 5.3rem;
-    text-align: left;
-    width: 302px;
+    flex-shrink: 0;
+    place-self: start;
   }
 
   &__content {
@@ -419,12 +417,10 @@ body {
 
   &__caption {
     margin-top: 3.5rem;
-    width: 25.8rem;
 
     // 752px
     @media (max-width: 47em) {
       margin-top: 2rem;
-      width: 14.1rem;
     }
   }
 
@@ -541,8 +537,7 @@ body {
     margin-top: 3.5rem;
     grid-column: 1/2;
     grid-row: 1/7;
-    width: 171px;
-    height: 50px;
+    place-self: start;
   }
 
   &__item {
@@ -598,7 +593,7 @@ body {
   &__caption {
     margin-top: 3.5rem;
     grid-column: 1/5;
-    width: 133px;
+    place-self: start;
   }
 
   &__date {
