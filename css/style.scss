@@ -22,13 +22,31 @@ a:active {
 
 html {
   font-size: 62.5%;
+
+  //1248px
+  @media (max-width: 78em) {
+    font-size: 50%;
+  }
+
+  //1008px
+  @media (max-width: 63em) {
+    font-size: 37.5%;
+  }
+
+  //752px
+  @media (max-width: 47em) {
+    font-size: 62.5%;
+  }
 }
 
 body {
-  // max-width: 100%;
-  // min-width: 32rem;
-  background-color: #fff;
+  background-color: var(--text-white);
   color: var(--text-black);
+  overflow-x: hidden;
+}
+
+.open-mob-menu body {
+  overflow: hidden;
 }
 
 /*---------------------blocks---------------------*/
@@ -59,7 +77,7 @@ body {
   border-radius: 9rem 9rem 0 0;
 
   &--white {
-    background-color: #fff;
+    background-color: var(--text-white);
   }
 
   &--black {
@@ -75,7 +93,7 @@ body {
   font-family: "Clash Grotesk Variable";
   font-style: normal;
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 12px;
   line-height: 100%;
   text-transform: uppercase;
   color: var(--text-white);
@@ -86,18 +104,90 @@ body {
   }
 }
 
+//1008px
+@media (max-width: 63em) {
+  .open-mob-menu .menu-font--mob {
+    text-align: center;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 90%;
+    color: var(--background-white);
+  }
+}
+
+.mob-menu-btn {
+  display: none;
+  padding: 0.5rem 1rem;
+  font-family: "Clash Grotesk Variable";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 100%;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+
+  //1008px
+  @media (max-width: 63em) {
+    &--open {
+      display: inline-block;
+      color: var(--text-white);
+      background-color: var(--element-black);
+    }
+
+    &--close {
+      color: var(--text-black);
+      background-color: var(--background-white);
+    }
+  }
+
+  // 752px
+  @media (max-width: 47em) {
+    padding: 0.3rem 0.6rem;
+    font-size: 1.2rem;
+  }
+}
+
+.open-mob-menu .mob-menu-btn--open {
+  display: none;
+}
+
+//1008px
+@media (max-width: 63em) {
+  .open-mob-menu .mob-menu-btn--close {
+    display: inline-block;
+  }
+}
+
 .headline1 {
   margin: 0;
   font-family: "Clash Grotesk Variable";
   font-style: normal;
   font-weight: 400;
-  font-size: 14rem;
+  font-size: 140px;
   line-height: 90%;
   text-transform: uppercase;
   color: var(--text-black);
 
   &--white {
-    color: #fff;
+    color: var(--text-white);
+  }
+
+  //1008px
+  @media (max-width: 63em) {
+    font-size: 84px;
+  }
+
+  // 752px
+  @media (max-width: 47em) {
+    font-size: 63px;
+  }
+
+  // 464px
+  @media (max-width: 29em) {
+    font-size: 40px;
   }
 }
 
@@ -238,60 +328,156 @@ body {
   min-height: calc(100vh + var(--phylosophy-rounded-top));
 
   &__content {
-    margin: auto;
-    max-width: 940px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     min-height: calc(100vh - var(--phylosophy-rounded-top));
+
+    //1008px
+    @media (max-width: 63em) {
+      justify-content: center;
+    }
   }
 
   &__header {
-    min-height: 130px;
+    min-height: 13rem;
+    position: relative;
   }
 
   &__header-inner {
-    padding: 50px 0 14px 0;
+    padding-top: 50px;
+    transition: padding 0.2s ease-in-out;
+
+    //1008px
+    @media (max-width: 63em) {
+      padding-top: 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    // 752px
+    @media (max-width: 47em) {
+      padding-top: 1.3rem;
+    }
   }
 
   &__headline1 {
     text-align: center;
-    color: #fff;
+    color: var(--text-white);
+    width: 940px;
+
+    //1008px
+    @media (max-width: 63em) {
+      width: 663px;
+    }
+
+    // 752px
+    @media (max-width: 47em) {
+      width: 424px;
+    }
+
+    // 464px
+    @media (max-width: 29em) {
+      width: 269px;
+    }
   }
 
   &__logo {
-    margin: 2px 0 0 9px;
+    margin: 0.2rem 0 0 0.9rem;
   }
 
   &__headline4 {
-    margin: 3rem auto 0 auto;
-    max-width: 690px;
+    margin-top: 3.2rem;
+    width: 69rem;
     text-align: center;
-    color: #fff;
+    color: var(--text-white);
+
+    // 752px
+    @media (max-width: 47em) {
+      width: 30rem;
+    }
   }
 
   &__vline {
-    margin: 5rem auto 0 auto;
+    margin-top: 5rem;
     height: 7.6rem;
     width: 1px;
-    background-color: #fff;
+    background-color: var(--text-white);
+
+    //1008px
+    @media (max-width: 63em) {
+      display: none;
+    }
+  }
+}
+
+.open-mob-menu .hero__header-inner {
+  //1008px
+  @media (max-width: 63em) {
+    padding: 8.34rem 12.34rem;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: repeat(2, auto);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--element-black);
+    z-index: 9999;
+  }
+
+  // 752px
+  @media (max-width: 47em) {
+    padding: 1.3rem 1rem 4rem 1rem;
   }
 }
 
 .header {
+  &__logo {
+    margin-left: 0.9rem;
+
+    // 752px
+    @media (max-width: 47em) {
+      margin-left: 0;
+    }
+  }
+
   &__lang {
     grid-column: 4/5;
     justify-self: end;
+
+    //1008px
+    @media (max-width: 63em) {
+      display: none;
+    }
   }
 
-  &__lang-btn:not(:last-child) {
-    margin-bottom: 1.5rem;
+  &__lang-btn {
+    //1008px
+    @media (max-width: 63em) {
+      font-size: 2rem;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
   }
 
   &__nav {
     grid-column: 3/4;
     display: flex;
     justify-content: space-between;
+
+    //1008px
+    @media (max-width: 63em) {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      position: absolute;
+    }
   }
 
   &__nav-item:not(:last-child) {
@@ -300,7 +486,11 @@ body {
 
   &__nav-column:last-child {
     margin-right: 4.3rem;
-    margin-bottom: 0;
+
+    //1008px
+    @media (max-width: 63em) {
+      margin-right: 0;
+    }
   }
 
   &__nav-item {
@@ -308,9 +498,53 @@ body {
   }
 }
 
+//1008px
+@media (max-width: 63em) {
+  .open-mob-menu .header__nav {
+    grid-row: 2/3;
+    grid-column: 1/3;
+    place-self: center;
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .open-mob-menu .header__nav-item:not(:last-child) {
+    margin-bottom: 0.4rem;
+  }
+
+  .open-mob-menu .header__nav-column:not(:last-child) {
+    margin-bottom: 0.4rem;
+  }
+
+  .open-mob-menu .header__lang {
+    display: block;
+    grid-row: 3/4;
+    grid-column: 1/3;
+    place-self: center;
+  }
+
+  .open-mob-menu .header__lang-btn {
+    display: inline-block;
+    color: var(--background-white);
+  }
+
+  .open-mob-menu .header__lang-btn:not(:last-child) {
+    margin: 0 1.5rem 0 0;
+  }
+}
+
 .logo-img {
   width: 20rem;
   height: 2.4rem;
+
+  //752px
+  @media (max-width: 47em) {
+    width: 11.5rem;
+    height: 1.4rem;
+  }
 }
 
 /*------------------phylosophy--------------------*/
@@ -500,27 +734,6 @@ body {
     @media (max-width: 47em) {
       margin-top: 5rem;
     }
-  }
-}
-
-//1248px
-@media (max-width: 78em) {
-  html {
-    font-size: 50%;
-  }
-}
-
-//1008px
-@media (max-width: 63em) {
-  html {
-    font-size: 37.5%;
-  }
-}
-
-//752px
-@media (max-width: 47em) {
-  html {
-    font-size: 62.5%;
   }
 }
 
