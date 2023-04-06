@@ -321,10 +321,10 @@ body {
     position: absolute;
     z-index: 1;
     top: 0;
-    bottom: 0;
+    bottom: calc(var(--phylosophy-rounded-top) * -1);
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.35);
+    background-color: rgba(0, 0, 0, 0.45);
   }
 }
 .hero__content {
@@ -391,6 +391,11 @@ body {
   width: 69rem;
   text-align: center;
   color: var(--text-white);
+}
+@media (max-width: 63em) {
+  .hero__headline4 {
+    margin-top: 1.6rem;
+  }
 }
 @media (max-width: 47em) {
   .hero__headline4 {
@@ -529,6 +534,8 @@ body {
 .phylosophy {
   margin-top: calc(var(--phylosophy-rounded-top) * -1);
   padding-top: var(--phylosophy-rounded-top);
+  position: relative;
+  z-index: 2;
 }
 .phylosophy__inner {
   display: flex;

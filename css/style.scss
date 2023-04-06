@@ -337,10 +337,10 @@ body {
       position: absolute;
       z-index: 1;
       top: 0;
-      bottom: 0;
+      bottom: calc(var(--phylosophy-rounded-top) * (-1));
       left: 0;
       right: 0;
-      background-color: rgba(0, 0, 0, 0.35);
+      background-color: rgba(0, 0, 0, 0.45);
     }
   }
 
@@ -414,6 +414,11 @@ body {
     width: 69rem;
     text-align: center;
     color: var(--text-white);
+
+    //1008px
+    @media (max-width: 63em) {
+      margin-top: 1.6rem;
+    }
 
     // 752px
     @media (max-width: 47em) {
@@ -572,6 +577,8 @@ body {
 .phylosophy {
   margin-top: calc(var(--phylosophy-rounded-top) * -1);
   padding-top: var(--phylosophy-rounded-top);
+  position: relative;
+  z-index: 2;
 
   &__inner {
     display: flex;
