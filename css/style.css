@@ -75,6 +75,11 @@ body {
 .rounded-corners {
   border-radius: 9rem 9rem 0 0;
 }
+@media (max-width: 47em) {
+  .rounded-corners {
+    border-radius: 4rem 4rem 0 0;
+  }
+}
 .rounded-corners--white {
   background-color: var(--text-white);
 }
@@ -236,6 +241,11 @@ body {
   line-height: 100%;
   color: var(--text-black);
 }
+@media (max-width: 47em) {
+  .text1 {
+    font-size: 2.2rem;
+  }
+}
 
 .text2 {
   font-family: Clash Grotesk Variable;
@@ -261,6 +271,11 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   border-bottom: 1px var(--text-black) solid;
+}
+@media (max-width: 47em) {
+  .link1 {
+    font-size: 1.4rem;
+  }
 }
 
 .link2 {
@@ -294,7 +309,7 @@ body {
   }
 }
 
-/*-------------------------colors-------------------*/
+/*-------------------------colors and variables-------------------*/
 :root {
   --text-black: #1d1d1d;
   --text-white: #fff;
@@ -303,7 +318,12 @@ body {
   --background-white: #f4f0e8;
   --element-black: #121212;
   --element-black-040: rgba(18, 18, 18, 0.4);
-  --phylosophy-rounded-top: 100px;
+  --phylosophy-rounded-top: 10rem;
+}
+@media (max-width: 47em) {
+  :root {
+    --phylosophy-rounded-top: 4.2rem;
+  }
 }
 
 /*---------------------hero section---------------------*/
@@ -316,7 +336,7 @@ body {
   .hero {
     background-image: url(../img/hero_photo_mob.jpg);
   }
-  .hero:after {
+  .hero::after {
     content: "";
     position: absolute;
     z-index: 1;
@@ -539,17 +559,30 @@ body {
 }
 .phylosophy__inner {
   display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  -moz-column-gap: 5.3rem;
+       column-gap: 5.3rem;
+  row-gap: 3rem;
 }
 .phylosophy__caption {
-  margin-right: 5.3rem;
-  flex-shrink: 0;
-  place-self: start;
+  flex: 0 0 auto;
 }
 .phylosophy__content {
   margin-bottom: 14rem;
+  flex: 1 1 39rem;
   display: flex;
   flex-direction: column;
-  width: 74.6428571429%;
+}
+@media (max-width: 47em) {
+  .phylosophy__content {
+    margin-bottom: 9rem;
+  }
+}
+@media (max-width: 27em) {
+  .phylosophy__content {
+    margin-bottom: 7rem;
+  }
 }
 .phylosophy__text1 {
   text-align: left;
@@ -558,13 +591,24 @@ body {
   margin-top: 5rem;
   display: inline;
 }
+@media (max-width: 47em) {
+  .phylosophy__link-wrap {
+    margin-top: 3.2rem;
+  }
+}
 .phylosophy__link::after {
-  display: inline;
-  padding: 0 0 0 26px;
+  display: inline-block;
+  padding: 0 0 0 2.6rem;
   content: "";
-  background: url(../img/link_arrow.svg) right center no-repeat;
-  height: 16px;
-  width: 16px;
+  background: url(../img/link_arrow.svg) right/contain no-repeat;
+  height: 1.6rem;
+  width: 1.6rem;
+}
+@media (max-width: 47em) {
+  .phylosophy__link::after {
+    height: 1rem;
+    width: 1rem;
+  }
 }
 
 /*------------------projects--------------------*/
