@@ -357,7 +357,7 @@ body {
       position: absolute;
       z-index: 1;
       top: 0;
-      bottom: calc(var(--phylosophy-rounded-top) * (-1));
+      min-height: calc(100vh + var(--phylosophy-rounded-top));
       left: 0;
       right: 0;
       background-color: rgba(0, 0, 0, 0.45);
@@ -388,7 +388,6 @@ body {
     padding-top: 50px;
     position: relative;
     z-index: 2;
-    // transition: padding 0.2s ease-in-out;
 
     //1008px
     @media (max-width: 63em) {
