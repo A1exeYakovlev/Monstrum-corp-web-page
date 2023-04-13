@@ -811,25 +811,59 @@ body {
 
 .awards {
   &__inner {
-    grid-template-rows: 160px 160px 160px 160px 178px;
-    grid-auto-rows: 160px;
-    padding-bottom: 15rem;
+    grid-template-rows: 16rem 16rem 16rem 16rem 18.2rem;
+    grid-auto-rows: 17rem;
+    padding: 5rem 0 14rem 0;
+    row-gap: 5rem;
+
+    //752px
+    @media (max-width: 47em) {
+      padding: 2rem 0 9rem 0;
+      display: grid;
+      grid-template-rows: minmax(11.6rem, auto);
+      grid-auto-rows: minmax(11.6rem, auto);
+      column-gap: 21.8%;
+      row-gap: 3rem;
+    }
+
+    // 432px
+    @media (max-width: 27em) {
+      display: block;
+      padding: 2rem 0 7rem 0;
+    }
   }
 
   &__caption {
-    margin-top: 3.5rem;
+    margin-top: -1.5rem;
     grid-column: 1/2;
-    grid-row: 1/7;
     place-self: start;
+
+    //752px
+    @media (max-width: 47em) {
+      margin-top: 0rem;
+    }
   }
 
   &__item {
-    margin-top: 5rem;
-    grid-column: 2/5;
+    grid-column: 2/-1;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: baseline;
     border-bottom: 1px solid var(--element-black-040);
+
+    //752px
+    @media (max-width: 47em) {
+      margin-top: 0rem;
+      padding-bottom: 3rem;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    // 432px
+    @media (max-width: 27em) {
+      padding: 3rem 0;
+    }
   }
 
   &__name {
@@ -843,26 +877,47 @@ body {
       font-size: inherit;
       line-height: inherit;
     }
-  }
 
-  &__name-year {
-    grid-column: 1/2;
-  }
+    //752px
+    @media (max-width: 47em) {
+      display: block;
+    }
 
-  &__title-name {
-    grid-column: 2/3;
-    width: 80%;
+    &-year {
+      grid-column: 1/2;
+    }
+
+    &-title {
+      grid-column: 2/3;
+      width: 80%;
+
+      //752px
+      @media (max-width: 47em) {
+        margin-top: 0.4rem;
+        width: 100%;
+      }
+    }
   }
 
   &__details {
     margin-left: 1.4rem;
     grid-column: 3/4;
+
+    //752px
+    @media (max-width: 47em) {
+      margin: 1rem 0 0 0;
+    }
   }
 
   &__btn {
-    margin-top: 7rem;
+    place-self: end;
     width: 100%;
-    grid-column: 2/5;
+    grid-column: 2/-1;
+
+    // 432px
+    @media (max-width: 27em) {
+      margin-top: 5rem;
+    }
   }
 }
 
