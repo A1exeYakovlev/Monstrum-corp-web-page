@@ -668,12 +668,12 @@ body {
 
     // 752px
     @media (max-width: 47em) {
-      padding-bottom: 7rem;
+      padding-bottom: 9rem;
     }
 
     // 432px
     @media (max-width: 27em) {
-      padding-bottom: 9rem;
+      padding-bottom: 7rem;
     }
   }
 
@@ -698,6 +698,7 @@ body {
 
   &__item-pic {
     img {
+      display: block;
       width: 33.5rem;
       aspect-ratio: 1/1;
       object-fit: cover;
@@ -713,7 +714,6 @@ body {
     //752px
     @media (max-width: 47em) {
       img {
-        display: block;
         width: 100%;
       }
     }
@@ -756,13 +756,6 @@ body {
 
     &__item-descr {
       margin-top: 0.4rem;
-    }
-  }
-
-  // 432px
-  @media (max-width: 27em) {
-    &__item-title {
-      margin-top: 2rem;
     }
   }
 

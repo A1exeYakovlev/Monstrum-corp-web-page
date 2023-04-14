@@ -617,12 +617,12 @@ body {
 }
 @media (max-width: 47em) {
   .projects__inner {
-    padding-bottom: 7rem;
+    padding-bottom: 9rem;
   }
 }
 @media (max-width: 27em) {
   .projects__inner {
-    padding-bottom: 9rem;
+    padding-bottom: 7rem;
   }
 }
 .projects__grid {
@@ -642,6 +642,7 @@ body {
   }
 }
 .projects__item-pic img {
+  display: block;
   width: 33.5rem;
   aspect-ratio: 1/1;
   -o-object-fit: cover;
@@ -653,7 +654,6 @@ body {
 }
 @media (max-width: 47em) {
   .projects__item-pic img {
-    display: block;
     width: 100%;
   }
 }
@@ -687,11 +687,6 @@ body {
   }
   .projects__item-descr {
     margin-top: 0.4rem;
-  }
-}
-@media (max-width: 27em) {
-  .projects__item-title {
-    margin-top: 2rem;
   }
 }
 .projects__item-inspiring {
