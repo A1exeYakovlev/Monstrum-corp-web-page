@@ -208,6 +208,17 @@ body {
   &--color-text2 {
     color: var(--text-2);
   }
+
+  //752px
+  @media (max-width: 47em) {
+    font-size: 2.4rem;
+    line-height: 101%;
+
+    &--sm-medium {
+      font-weight: 500;
+      line-height: 100%;
+    }
+  }
 }
 
 .headline4 {
@@ -285,7 +296,7 @@ body {
   color: var(--text-black);
   text-transform: uppercase;
   text-decoration: none;
-  border-bottom: 1px var(--text-black) solid;
+  border-bottom: 1px currentColor solid;
 
   // 752px
   @media (max-width: 47em) {
@@ -298,8 +309,8 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 1.6rem;
-  line-height: 2rem;
-  text-decoration-line: underline;
+  line-height: 100%;
+  border-bottom: 1.5px currentColor solid;
   text-transform: uppercase;
   color: var(--text-black);
 }
@@ -924,22 +935,66 @@ body {
 .news {
   &__inner {
     padding-bottom: 10rem;
-    grid-template-rows: 185px 85px 550px;
+    grid-template-rows: 18.5rem 8.5rem auto;
+
+    //752px
+    @media (max-width: 47em) {
+      padding: 2rem 0 4rem 0;
+    }
+
+    // 432px
+    @media (max-width: 27em) {
+      padding: 2rem 0 3rem 0;
+    }
   }
 
   &__caption {
     margin-top: 3.5rem;
     grid-column: 1/5;
+    grid-row: 1/2;
     place-self: start;
+
+    //752px
+    @media (max-width: 47em) {
+      margin: 0;
+    }
   }
 
   &__date {
-    max-width: 94px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    max-width: 9.4rem;
     overflow-wrap: break-word;
+
+    //1536px
+    @media (max-width: 96em) {
+      grid-row: 1/2;
+      align-self: end;
+    }
+
+    //752px
+    @media (max-width: 47em) {
+      margin-top: 2rem;
+      max-width: 100%;
+      opacity: 70%;
+    }
   }
 
   &__title {
     grid-column: 2/4;
+    grid-row: 2/3;
+
+    //1536px
+    @media (max-width: 96em) {
+      grid-column: 2/4;
+      grid-row: 1/2;
+      align-self: end;
+    }
+
+    //752px
+    @media (max-width: 47em) {
+      margin-top: 1.5rem;
+    }
   }
 
   &__descr {
@@ -947,42 +1002,104 @@ body {
     grid-row: 2/4;
     display: flex;
     flex-direction: column;
-  }
+    align-items: flex-start;
 
-  &__descr-text {
-    flex: 1 1 auto;
-    padding-right: 35px;
-  }
+    //1536px
+    @media (max-width: 96em) {
+      grid-column: 3/5;
+      grid-row: 3/4;
+    }
 
-  &__descr-text p:not(:first-child) {
-    margin-top: 25px;
+    //752px
+    @media (max-width: 47em) {
+      margin-top: 1.5rem;
+    }
+
+    &-text {
+      flex: 1 1 auto;
+      padding-right: 3.5rem;
+
+      & p:not(:first-child) {
+        margin-top: 2.5rem;
+
+        //752px
+        @media (max-width: 47em) {
+          margin-top: 1rem;
+        }
+      }
+    }
+
+    &-link {
+      //752px
+      @media (max-width: 47em) {
+        margin-top: 2rem;
+        text-align: right;
+      }
+    }
   }
 
   &__pic {
     grid-column: 1/3;
-    max-width: 550px;
-  }
+    grid-row: 3/4;
+    // max-width: 55rem;
+    text-align: center;
 
-  &__descr-link {
+    //752px
+    @media (max-width: 47em) {
+      margin-top: 4rem;
+    }
+
+    img {
+      width: 100%;
+
+      //1536px
+      @media (max-width: 96em) {
+        width: 75%;
+        justify-self: end;
+      }
+
+      //752px
+      @media (max-width: 47em) {
+        width: 100%;
+      }
+    }
   }
 
   &__view {
     margin-top: 5rem;
     min-height: 16.4rem;
+
+    //752px
+    @media (max-width: 47em) {
+      margin-top: 2rem;
+      min-height: 7rem;
+    }
+
+    // 432px
+    @media (max-width: 27em) {
+      margin-top: 4rem;
+      min-height: 8rem;
+    }
   }
 
   &__view-link {
     grid-column: 4/5;
-    height: 24px;
-    width: 123px;
+    height: 2.4rem;
+    width: 12.3rem;
 
     &::after {
-      display: inline;
-      padding: 0 0 0 26px;
+      display: inline-block;
+      padding: 0 0 0 2.6rem;
       content: "";
-      background: url(../img/link_arrow.svg) right center no-repeat;
-      height: 16px;
-      width: 16px;
+      background: url(../img/link_arrow.svg) right/contain no-repeat;
+      height: 1.6rem;
+      width: 1.6rem;
+
+      //752px
+      @media (max-width: 47em) {
+        height: 1rem;
+        width: 1rem;
+      }
     }
   }
 }
