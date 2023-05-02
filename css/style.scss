@@ -214,7 +214,7 @@ body {
     font-size: 2.4rem;
     line-height: 101%;
 
-    &--sm-medium {
+    &--medium-mob {
       font-weight: 500;
       line-height: 100%;
     }
@@ -414,7 +414,7 @@ body {
     }
   }
 
-  &__headline1 {
+  &__title {
     text-align: center;
     color: var(--text-white);
     width: 940px;
@@ -439,7 +439,7 @@ body {
     margin: 0.2rem 0 0 0.9rem;
   }
 
-  &__headline4 {
+  &__descr {
     margin-top: 3.2rem;
     width: 69rem;
     text-align: center;
@@ -881,7 +881,7 @@ body {
     display: grid;
     grid-template-columns: 30% 70%;
 
-    h4 {
+    p {
       font-style: inherit;
       font-weight: inherit;
       font-size: inherit;
