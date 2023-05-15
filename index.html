@@ -54,7 +54,7 @@
       </header>
       <div class="hero__content">
         <h1 class="hero__title headline1">
-          We&nbsp;create playgrounds sparking imagination
+          We&nbsp;create<br />playgrounds<br />sparking<br />imagination
         </h1>
         <p class="hero__descr headline4">
           Based on&nbsp;visual arts and design, MONSTRUM create playgrounds that
@@ -405,20 +405,77 @@
     <footer class="footer rounded-corners rounded-corners--black">
       <div class="container">
         <div class="footer__marquee"></div>
-        <div class="footer-talk">
-          <div class="footer__inner-wrap">
+        <div class="footer__talk">
+          <div class="footer__inner">
             <h2
-              class="footer-talk__title footer-talk__title--right-img headline1 headline1--white"
+              class="footer__talk-title1 headline1 headline1--sm headline1--white"
             >
-              Want to have
+              Want to
             </h2>
             <h2
-              class="footer-talk__title footer-talk__title--left-img headline1 headline1--white"
+              class="footer__talk-title2 headline1 headline1--sm headline1--white"
+            >
+              have
+            </h2>
+            <picture class="footer__talk-img1">
+              <source
+                type="img/png"
+                srcset="
+                  img/footer_img1_81w.png   81w,
+                  img/footer_img1_160w.png 160w,
+                  img/footer_img1_320w.png 320w
+                "
+                sizes="(max-width: 528px) 54px,
+                (max-width:832px) 100px,
+                160px"
+              />
+              <img
+                src="img/footer_img1_160w.png"
+                alt=""
+                srcset="
+                  img/footer_img1_81w.png   81w,
+                  img/footer_img1_160w.png 160w,
+                  img/footer_img1_320w.png 320w
+                "
+                sizes="(max-width: 528px) 54px,
+                (max-width:832px) 100px,
+                160px"
+              />
+            </picture>
+            <picture class="footer__talk-img2">
+              <source
+                type="img/png"
+                srcset="
+                  img/footer_img2_81w.png   81w,
+                  img/footer_img2_160w.png 160w,
+                  img/footer_img2_320w.png 320w
+                "
+                sizes="(max-width: 528px) 54px,
+              (max-width:832px) 100px,
+              160px"
+              />
+              <img
+                src="img/footer_img2_160w.png"
+                alt=""
+                srcset="
+                  img/footer_img2_81w.png   81w,
+                  img/footer_img2_160w.png 160w,
+                  img/footer_img2_320w.png 320w
+                "
+                sizes="(max-width: 528px) 54px,
+              (max-width:832px) 100px,
+              160px"
+              />
+            </picture>
+            <h2
+              class="footer__talk-title3 headline1 headline1--sm headline1--white"
             >
               a talk?
             </h2>
           </div>
-          <div class="footer-talk__btn footer-talk__btn-text">Contact</div>
+          <button class="footer__talk-btn footer__talk-btn circle-button">
+            Contact
+          </button>
         </div>
         <div class="footer-bottom grid">
           <div class="footer-bottom__info">
@@ -428,9 +485,6 @@
             <p class="footer-bottom__tel menu-font">+ 45 33 22 10 77</p>
             <p class="footer-bottom__adress menu-font">
               Engager 3 2605<br />Brøndby Denmark
-            </p>
-            <p class="footer-bottom__copy menu-font">
-              © Monstrum, Inc. All rights reserved
             </p>
           </div>
           <ul class="footer-bottom__mail">
@@ -453,7 +507,7 @@
             </ul>
             <ul>
               <li class="footer-bottom__nav-item">
-                <a class="menu-font" href="#">Projects</a>
+                <a class="menu-font menu-font--opacity1" href="#">Projects</a>
               </li>
               <li class="footer-bottom__nav-item">
                 <a class="menu-font" href="#">Approach</a>
@@ -472,6 +526,9 @@
               </li>
             </ul>
           </nav>
+          <p class="footer-bottom__copy menu-font">
+            © Monstrum, Inc. All rights reserved
+          </p>
         </div>
       </div>
     </footer>
