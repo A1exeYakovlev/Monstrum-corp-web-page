@@ -23,20 +23,41 @@
             </a>
             <nav class="nav header__nav">
               <ul class="header__nav-column">
-                <li class="header__nav-item menu-font menu-font--mob">
-                  Projects
+                <li class="header__nav-item menu-link">
+                  <a
+                    class="menu-font menu-font--mob menu-link"
+                    href="#projects"
+                  >
+                    Projects
+                  </a>
                 </li>
-                <li class="header__nav-item menu-font menu-font--mob">
-                  Approach
+                <li class="header__nav-item">
+                  <a class="menu-font menu-font--mob menu-link" href="#approach"
+                    >Approach</a
+                  >
                 </li>
-                <li class="header__nav-item menu-font menu-font--mob">News</li>
+                <li class="header__nav-item">
+                  <a class="menu-font menu-font--mob menu-link" href="#news"
+                    >News</a
+                  >
+                </li>
               </ul>
               <ul class="header__nav-column">
-                <li class="header__nav-item menu-font menu-font--mob">About</li>
-                <li class="header__nav-item menu-font menu-font--mob">
-                  Contact
+                <li class="header__nav-item">
+                  <a class="menu-font menu-font--mob menu-link" href="#"
+                    >About</a
+                  >
                 </li>
-                <li class="header__nav-item menu-font menu-font--mob">Team</li>
+                <li class="header__nav-item">
+                  <a class="menu-font menu-font--mob menu-link" href="#contacts"
+                    >Contact</a
+                  >
+                </li>
+                <li class="header__nav-item">
+                  <a class="menu-font menu-font--mob menu-link" href="#"
+                    >Team</a
+                  >
+                </li>
               </ul>
             </nav>
             <div class="header__lang">
@@ -64,7 +85,10 @@
         <div class="hero__vline"></div>
       </div>
     </section>
-    <section class="phylosophy rounded-corners rounded-corners--white">
+    <section
+      class="phylosophy rounded-corners rounded-corners--white"
+      id="approach"
+    >
       <div class="container">
         <div class="phylosophy__inner section-border-line">
           <h2 class="phylosophy__caption caption headline4">Our phylosophy</h2>
@@ -79,13 +103,13 @@
               bringing a&nbsp;smile to&nbsp;peoples&rsquo; faces.
             </p>
             <div class="phylosophy__link-wrap">
-              <a href="" class="phylosophy__link link1">Discover approach</a>
+              <a href="#" class="phylosophy__link link1">Discover approach</a>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="projects">
+    <section class="projects" id="projects">
       <div class="container">
         <div class="projects__inner section-border-line">
           <h2 class="projects__caption caption headline4">Our projects</h2>
@@ -138,6 +162,8 @@
                       img/projects_the-river-giants_1.5x.webp 1.5x,
                       img/projects_the-river-giants_2x.webp   2x
                     "
+                  />
+                  <source
                     type="image/png"
                     srcset="
                       img/projects_the-river-giants_1x.png   1x,
@@ -342,7 +368,7 @@
         </div>
       </div>
     </section>
-    <section class="news">
+    <section class="news" id="news">
       <div class="container">
         <div class="news__inner section-border-line grid">
           <h2 class="news__caption caption headline4">News</h2>
@@ -402,7 +428,7 @@
         </div>
       </div>
     </section>
-    <footer class="footer rounded-corners rounded-corners--black">
+    <footer class="footer rounded-corners rounded-corners--black" id="contacts">
       <div class="container">
         <div class="footer__marquee"></div>
         <div class="footer__talk">
@@ -507,19 +533,21 @@
             </ul>
             <ul>
               <li class="footer-bottom__nav-item">
-                <a class="menu-font menu-font--opacity1" href="#">Projects</a>
+                <a class="menu-font menu-font--opacity1" href="#projects"
+                  >Projects</a
+                >
               </li>
               <li class="footer-bottom__nav-item">
-                <a class="menu-font" href="#">Approach</a>
+                <a class="menu-font" href="#approach">Approach</a>
               </li>
               <li class="footer-bottom__nav-item">
-                <a class="menu-font" href="#">News</a>
+                <a class="menu-font" href="#news">News</a>
               </li>
               <li class="footer-bottom__nav-item">
                 <a class="menu-font" href="#">About</a>
               </li>
               <li class="footer-bottom__nav-item">
-                <a class="menu-font" href="#">Contact</a>
+                <a class="menu-font" href="#contacts">Contact</a>
               </li>
               <li class="footer-bottom__nav-item">
                 <a class="menu-font" href="#">Team</a>
