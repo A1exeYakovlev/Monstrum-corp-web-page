@@ -1,0 +1,66 @@
+.phylosophy {
+  margin-top: calc(var(--phylosophy-rounded-top) * -1);
+  padding-top: var(--phylosophy-rounded-top);
+  position: relative;
+  z-index: 2;
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    column-gap: 5.3rem;
+    row-gap: 3rem;
+  }
+
+  &__caption {
+    flex: 0 0 auto;
+  }
+
+  &__content {
+    margin-bottom: 14rem;
+    flex: 1 1 39rem;
+    display: flex;
+    flex-direction: column;
+
+    //752px
+    @media (max-width: 47em) {
+      margin-bottom: 9rem;
+    }
+
+    // 432px
+    @media (max-width: 27em) {
+      margin-bottom: 7rem;
+    }
+  }
+
+  &__text1 {
+    text-align: left;
+  }
+
+  &__link-wrap {
+    margin-top: 5rem;
+    display: inline;
+
+    //752px
+    @media (max-width: 47em) {
+      margin-top: 3.2rem;
+    }
+  }
+
+  &__link {
+    &::after {
+      display: inline-block;
+      padding: 0 0 0 2.6rem;
+      content: "";
+      background: url(../img/link_arrow.svg) right/contain no-repeat;
+      height: 1.6rem;
+      width: 1.6rem;
+
+      // 752px
+      @media (max-width: 47em) {
+        height: 1rem;
+        width: 1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+
+  //1248px
+  @media (max-width: 78em) {
+    font-size: 50%;
+  }
+
+  //1008px
+  @media (max-width: 63em) {
+    font-size: 37.5%;
+  }
+
+  //752px
+  @media (max-width: 47em) {
+    font-size: 62.5%;
+  }
+}
+
+body {
+  background-color: var(--text-white);
+  overflow-x: hidden;
+}
+
+.open-mob-menu body {
+  overflow: hidden;
+}

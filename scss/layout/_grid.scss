@@ -1,0 +1,10 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2rem;
+
+  // 752px
+  @media (max-width: 47em) {
+    display: block;
+  }
+}

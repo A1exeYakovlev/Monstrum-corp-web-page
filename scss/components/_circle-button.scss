@@ -1,0 +1,24 @@
+.circle-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 21rem;
+  width: 21rem;
+  min-height: 100%;
+  border-radius: 50%;
+  border: 1px var(--text-white) solid;
+  font-family: "Clash Grotesk Variable";
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.7rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: var(--text-white);
+
+  //752px
+  @media (max-width: 47em) {
+    height: 12.4rem;
+    width: 12.4rem;
+  }
+}

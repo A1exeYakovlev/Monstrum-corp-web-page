@@ -1,0 +1,15 @@
+:root {
+  --text-black: #1d1d1d;
+  --text-white: #fff;
+  --text-1: #0f6da7;
+  --text-2: #0dc1c2;
+  --background-white: #f4f0e8;
+  --element-black: #121212;
+  --element-black-040: rgba(18, 18, 18, 0.4);
+  --phylosophy-rounded-top: 10rem;
+
+  // 752px
+  @media (max-width: 47em) {
+    --phylosophy-rounded-top: 4.2rem;
+  }
+}

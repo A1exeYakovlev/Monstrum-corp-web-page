@@ -1,0 +1,183 @@
+body {
+  font-family: "Clash Grotesk Variable";
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--text-black);
+}
+
+.menu-font {
+  font-family: "Clash Grotesk Variable";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: var(--text-white);
+  opacity: 0.6;
+
+  &--opacity1 {
+    opacity: 1;
+  }
+}
+
+//1008px
+@media (max-width: 63em) {
+  .open-mob-menu .menu-font--mob {
+    text-align: center;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 90%;
+    color: var(--background-white);
+  }
+}
+
+.headline1 {
+  margin: 0;
+  font-family: "Clash Grotesk Variable";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 140px;
+  line-height: 90%;
+  text-transform: uppercase;
+  color: var(--text-black);
+
+  &--white {
+    color: var(--text-white);
+  }
+
+  //1376px
+  @media (max-width: 86em) {
+    font-size: 10rem;
+  }
+
+  //1008px
+  @media (max-width: 63em) {
+    font-size: 84px;
+  }
+
+  // 832px
+  @media (max-width: 52em) {
+    font-size: 63px;
+  }
+
+  // 528px
+  @media (max-width: 33em) {
+    font-size: 40px;
+  }
+
+  // 352px
+  @media (max-width: 22em) {
+    &--sm {
+      font-size: 32px;
+      overflow-wrap: break-word;
+    }
+  }
+}
+
+.headline3 {
+  font-family: "Clash Grotesk Variable";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 6.4rem;
+  line-height: 86%;
+  text-transform: uppercase;
+  color: var(--text-black);
+
+  &--color-text2 {
+    color: var(--text-2);
+  }
+
+  //752px
+  @media (max-width: 47em) {
+    font-size: 2.4rem;
+    line-height: 101%;
+
+    &--medium-mob {
+      font-weight: 500;
+      line-height: 100%;
+    }
+  }
+}
+
+.headline4 {
+  font-family: "Clash Grotesk Variable";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 101%;
+  text-transform: uppercase;
+  color: var(--text-black);
+
+  &--medium {
+    font-weight: 500;
+    line-height: 100%;
+  }
+
+  // 752px
+  @media (max-width: 47em) {
+    font-size: 1.6rem;
+
+    &--lg {
+      font-size: 2.4rem;
+    }
+  }
+}
+
+.text1 {
+  font-family: "Clash Grotesk Variable";
+  font-size: 4rem;
+  font-weight: 400;
+  letter-spacing: 0em;
+  font-style: normal;
+  line-height: 100%;
+  color: var(--text-black);
+
+  // 752px
+  @media (max-width: 47em) {
+    font-size: 2.2rem;
+  }
+}
+
+.text2 {
+  font-family: "Clash Grotesk Variable";
+  font-size: 2.3rem;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--text-black);
+
+  // 752px
+  @media (max-width: 47em) {
+    font-size: 1.8rem;
+  }
+}
+
+.link1 {
+  font-family: "Clash Grotesk Variable";
+  font-weight: 400;
+  font-size: 2.3rem;
+  line-height: 100%;
+  color: var(--text-black);
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 1px currentColor solid;
+
+  // 752px
+  @media (max-width: 47em) {
+    font-size: 1.4rem;
+  }
+}
+
+.link2 {
+  font-family: "Clash Grotesk Variable";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 100%;
+  border-bottom: 1.5px currentColor solid;
+  text-transform: uppercase;
+  color: var(--text-black);
+}

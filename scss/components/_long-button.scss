@@ -1,0 +1,19 @@
+.long-button {
+  height: 10rem;
+  font-family: "Clash Grotesk Variable";
+  font-weight: 500;
+  font-size: 2.5rem;
+  line-height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--text-black);
+  border: 1px solid var(--element-black);
+  border-radius: 7.4rem;
+  background-color: transparent;
+
+  // 752px
+  @media (max-width: 47em) {
+    height: 8rem;
+    font-size: 1.8rem;
+  }
+}

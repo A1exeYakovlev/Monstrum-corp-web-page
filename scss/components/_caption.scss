@@ -1,0 +1,12 @@
+.caption {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  letter-spacing: 0em;
+  border: 1px solid var(--text-black);
+  border-radius: 9rem;
+
+  // 752px
+  @media (max-width: 47em) {
+    padding: 0.6rem 1.5rem;
+  }
+}

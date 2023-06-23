@@ -1,0 +1,20 @@
+.rounded-corners {
+  border-radius: 9rem 9rem 0 0;
+
+  // 752px
+  @media (max-width: 47em) {
+    border-radius: 4rem 4rem 0 0;
+  }
+
+  &--white {
+    background-color: var(--text-white);
+  }
+
+  &--black {
+    background-color: var(--element-black);
+  }
+}
+
+.section-border-line {
+  border-bottom: 1px var(--element-black-040) solid;
+}

@@ -1,0 +1,120 @@
+.hero {
+  background-color: var(--text-1);
+  background: url(../img/hero_photo.jpg) center/cover no-repeat;
+  min-height: calc(100vh + var(--phylosophy-rounded-top));
+
+  //1008px
+  @media (max-width: 63em) {
+    background-image: url(../img/hero_photo_mob.jpg);
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      min-height: calc(100vh + var(--phylosophy-rounded-top));
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.45);
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - var(--phylosophy-rounded-top));
+    position: relative;
+    z-index: 2;
+
+    //1008px
+    @media (max-width: 63em) {
+      justify-content: center;
+    }
+  }
+
+  &__header {
+    min-height: 13rem;
+    position: relative;
+  }
+
+  &__header-inner {
+    padding-top: 50px;
+    position: relative;
+    z-index: 2;
+
+    //1008px
+    @media (max-width: 63em) {
+      padding-top: 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    // 752px
+    @media (max-width: 47em) {
+      padding-top: 1.3rem;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    color: var(--text-white);
+  }
+
+  &__logo {
+    margin: 0.2rem 0 0 0.9rem;
+  }
+
+  &__descr {
+    margin-top: 3.2rem;
+    width: 69rem;
+    text-align: center;
+    color: var(--text-white);
+
+    //1008px
+    @media (max-width: 63em) {
+      margin-top: 1.6rem;
+    }
+
+    // 752px
+    @media (max-width: 47em) {
+      width: 30rem;
+    }
+  }
+
+  &__vline {
+    margin-top: 5rem;
+    height: 7.6rem;
+    width: 1px;
+    background-color: var(--text-white);
+
+    //1008px
+    @media (max-width: 63em) {
+      display: none;
+    }
+  }
+}
+
+.open-mob-menu .hero__header-inner {
+  //1008px
+  @media (max-width: 63em) {
+    padding: 8.34rem 12.34rem;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: repeat(2, auto);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--element-black);
+    z-index: 5;
+  }
+
+  // 752px
+  @media (max-width: 47em) {
+    padding: 1.3rem 1rem 4rem 1rem;
+  }
+}

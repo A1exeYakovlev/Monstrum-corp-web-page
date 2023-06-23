@@ -1,0 +1,101 @@
+.header {
+  &__logo {
+    margin-left: 0.9rem;
+
+    // 752px
+    @media (max-width: 47em) {
+      margin-left: 0;
+    }
+  }
+
+  &__lang {
+    grid-column: 4/5;
+    justify-self: end;
+
+    //1008px
+    @media (max-width: 63em) {
+      display: none;
+    }
+  }
+
+  &__lang-btn {
+    //1008px
+    @media (max-width: 63em) {
+      font-size: 2rem;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__nav {
+    grid-column: 3/4;
+    display: flex;
+    justify-content: space-between;
+
+    //1008px
+    @media (max-width: 63em) {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      position: absolute;
+    }
+  }
+
+  &__nav-item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  &__nav-column:last-child {
+    margin-right: 4.3rem;
+
+    //1008px
+    @media (max-width: 63em) {
+      margin-right: 0;
+    }
+  }
+
+  &__nav-item {
+    list-style: none;
+  }
+}
+
+//1008px
+@media (max-width: 63em) {
+  .open-mob-menu .header__nav {
+    grid-row: 2/3;
+    grid-column: 1/3;
+    place-self: center;
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    text-align: center;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .open-mob-menu .header__nav-item:not(:last-child) {
+    margin-bottom: 4px;
+  }
+
+  .open-mob-menu .header__nav-column:not(:last-child) {
+    margin-bottom: 4px;
+  }
+
+  .open-mob-menu .header__lang {
+    display: block;
+    grid-row: 3/4;
+    grid-column: 1/3;
+    place-self: center;
+  }
+
+  .open-mob-menu .header__lang-btn {
+    display: inline-block;
+    color: var(--background-white);
+  }
+
+  .open-mob-menu .header__lang-btn:not(:last-child) {
+    margin: 0 15px 0 0;
+  }
+}

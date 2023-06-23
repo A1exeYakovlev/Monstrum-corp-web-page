@@ -1,0 +1,137 @@
+.projects {
+  &__inner {
+    padding-bottom: 14rem;
+
+    // 752px
+    @media (max-width: 47em) {
+      padding-bottom: 9rem;
+    }
+
+    // 432px
+    @media (max-width: 27em) {
+      padding-bottom: 7rem;
+    }
+  }
+
+  &__grid {
+    grid-template-rows: 42.5rem 35.5rem 7rem 42.5rem;
+    grid-template-columns: repeat(4, minmax(auto, 33.5rem));
+    margin-top: 10rem;
+
+    // 752px
+    @media (max-width: 47em) {
+      display: block;
+      margin-top: 3rem;
+    }
+  }
+
+  // 752px
+  @media (max-width: 47em) {
+    &__item:not(:first-child) {
+      margin-top: 5rem;
+    }
+  }
+
+  &__item-pic {
+    img {
+      display: block;
+      width: 33.5rem;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      border-radius: 13%;
+    }
+
+    &--main {
+      img {
+        width: 69rem;
+      }
+    }
+
+    //752px
+    @media (max-width: 47em) {
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  &__caption {
+    margin-top: 3.5rem;
+
+    // 752px
+    @media (max-width: 47em) {
+      margin-top: 2rem;
+    }
+  }
+
+  &__item-expo2020 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+
+  &__item-giants {
+    grid-row: 1/3;
+    grid-column: 2/5;
+    justify-self: end;
+  }
+
+  &__item-title {
+    margin-top: 2.5rem;
+  }
+
+  &__item-descr {
+    margin-top: 1rem;
+    opacity: 70%;
+  }
+
+  // 752px
+  @media (max-width: 47em) {
+    &__item-title {
+      margin-top: 1.5rem;
+    }
+
+    &__item-descr {
+      margin-top: 0.4rem;
+    }
+  }
+
+  &__item-inspiring {
+    margin-top: 1.3rem;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    align-self: center;
+  }
+
+  //752px
+  @media (max-width: 47em) {
+    &__item-inspiring-text {
+      display: none;
+    }
+  }
+
+  &__item-globe {
+    grid-row: 4/5;
+    grid-column: 1/2;
+  }
+
+  &__item-surfer {
+    grid-row: 4/5;
+    grid-column: 2/3;
+  }
+
+  &__item-plantsVsZ {
+    grid-row: 4/5;
+    grid-column: 3/5;
+    justify-self: end;
+  }
+
+  &__btn {
+    margin-top: 7rem;
+    width: 100%;
+
+    //752px
+    @media (max-width: 47em) {
+      margin-top: 5rem;
+    }
+  }
+}
