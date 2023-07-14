@@ -1,4 +1,6 @@
 .footer {
+  margin-top: calc(var(--section-rounded-top) * -1);
+
   &__marquee {
     min-height: 13.4rem;
     border-bottom: 1px var(--text-white) solid;

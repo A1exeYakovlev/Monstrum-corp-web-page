@@ -3,13 +3,16 @@
   --text-white: #fff;
   --text-1: #0f6da7;
   --text-2: #0dc1c2;
+  --text-3: #d7a46c;
   --background-white: #f4f0e8;
+  --background-white-2: #f7f6f2;
+  --background-light: #eae8e1;
   --element-black: #121212;
   --element-black-040: rgba(18, 18, 18, 0.4);
-  --phylosophy-rounded-top: 10rem;
+  --section-rounded-top: 10rem;
 
   // 752px
   @media (max-width: 47em) {
-    --phylosophy-rounded-top: 4.2rem;
+    --section-rounded-top: 4.2rem;
   }
 }

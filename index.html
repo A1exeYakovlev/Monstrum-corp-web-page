@@ -16,9 +16,13 @@
     <section class="hero">
       <header class="header">
         <div class="container">
-          <div class="hero__header-inner grid">
-            <a class="logo header__logo" href="#">
-              <img class="logo-img" src="img/Logo Desktop.svg" alt="" />
+          <div class="header__inner grid">
+            <a class="header__logo" href="#">
+              <img
+                class="logo-img logo-img--mob-sm"
+                src="img/Logo Desktop.svg"
+                alt=""
+              />
             </a>
             <nav class="nav header__nav">
               <ul class="header__nav-column">
@@ -308,7 +312,7 @@
               <p class="projects__item-descr text2">Wuxi, China</p>
             </div>
           </div>
-          <button class="projects__btn long-button">More</button>
+          <button class="projects__btn long-button button-text">More</button>
         </div>
       </div>
     </section>
@@ -363,7 +367,7 @@
               Winner, Mobile Home for Homeless, Charity project, Denmark
             </p>
           </div>
-          <button class="awards__btn long-button">More</button>
+          <button class="awards__btn long-button button-text">More</button>
         </div>
       </div>
     </section>
@@ -424,6 +428,169 @@
         </div>
         <div class="news__view grid">
           <a class="news__view-link link1" href="#">View all</a>
+        </div>
+      </div>
+    </section>
+    <section class="contact-form">
+      <header class="header">
+        <div class="container">
+          <div class="header__inner grid">
+            <a class="header__logo" href="#">
+              <img
+                class="logo-img logo-img--mob-sm"
+                src="img/Logo Desktop Black.svg"
+                alt=""
+              />
+            </a>
+            <nav class="nav header__nav">
+              <ul class="header__nav-column">
+                <li class="header__nav-item">
+                  <a
+                    class="menu-font menu-font--black menu-font--mob menu-link"
+                    href="#projects"
+                  >
+                    Projects
+                  </a>
+                </li>
+                <li class="header__nav-item">
+                  <a
+                    class="menu-font menu-font--black menu-font--mob menu-link"
+                    href="#approach"
+                    >Approach</a
+                  >
+                </li>
+                <li class="header__nav-item">
+                  <a
+                    class="menu-font menu-font--black menu-font--mob menu-link"
+                    href="#news"
+                    >News</a
+                  >
+                </li>
+              </ul>
+              <ul class="header__nav-column">
+                <li class="header__nav-item">
+                  <a
+                    class="menu-font menu-font--black menu-font--mob menu-link"
+                    href="#"
+                    >About</a
+                  >
+                </li>
+                <li class="header__nav-item">
+                  <a
+                    class="menu-font menu-font--black menu-font--opacity1 menu-font--mob menu-link"
+                    href="#contacts"
+                    >Contact</a
+                  >
+                </li>
+                <li class="header__nav-item">
+                  <a
+                    class="menu-font menu-font--black menu-font--mob menu-link"
+                    href="#"
+                    >Team</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <div class="header__lang">
+              <p
+                class="header__lang-btn menu-font--black menu-font menu-font--opacity1"
+              >
+                EN
+              </p>
+              <p class="header__lang-btn menu-font--black menu-font">DA</p>
+            </div>
+            <button class="hero__mob-menu-btn mob-menu-btn mob-menu-btn--open">
+              Menu
+            </button>
+            <button class="hero__mob-menu-btn mob-menu-btn mob-menu-btn--close">
+              Close
+            </button>
+          </div>
+        </div>
+      </header>
+      <div class="container">
+        <div class="contact-form__inner grid">
+          <div class="contact-form__content">
+            <h2 class="contact-form__title headline2">
+              We&rsquo;ll<br />
+              <span class="headline2 headline2--color-text">gladly</span
+              ><br />answer<br />your<br />questions!
+            </h2>
+            <div class="contact-form__info">
+              <p class="text2 text2--uppercase">
+                Engager 3<br />2605 Brøndby<br />Denmark
+              </p>
+              <a class="text2" href="tel:+4533221077">+ 45 33 22 10 77</a><br />
+              <a class="text2" href="mailto:post@monstrum.dk"
+                >post@monstrum.dk</a
+              >
+            </div>
+          </div>
+          <form class="contact-form__input grid grid-col-2" action="#">
+            <div class="contact-form__input-item">
+              <input
+                class="contact-form__form-field text3"
+                id="name"
+                placeholder="Name"
+                name="name"
+                type="text"
+                required
+              />
+            </div>
+            <div class="contact-form__input-item">
+              <input
+                class="contact-form__form-field text3"
+                id="phone"
+                placeholder="Phone"
+                name="phone"
+                type="tel"
+              />
+            </div>
+            <div class="contact-form__input-item">
+              <input
+                class="contact-form__form-field text3"
+                id="email"
+                placeholder="E-mail"
+                name="email"
+                type="email"
+                required
+              />
+            </div>
+            <div class="contact-form__input-item">
+              <input
+                class="contact-form__form-field text3"
+                id="source"
+                placeholder="Where did you hear about us?"
+                name="source"
+                type="text"
+              />
+            </div>
+            <div class="contact-form__input-item">
+              <textarea
+                class="contact-form__textarea text3"
+                id="message"
+                name="message"
+                placeholder="Message"
+                required
+              ></textarea>
+            </div>
+            <div class="contact-form__input-item contact-form__long-button">
+              <button class="long-button button-text">Send message</button>
+            </div>
+            <div class="contact-form__input-item contact-form__sign-me">
+              <input
+                class="contact-form__sign-me-input"
+                id="sign-me"
+                name="sign-me"
+                value="checked"
+                type="checkbox"
+              />
+              <label class="text3 contact-form__sign-me-label" for="sign-me">
+                <span class="contact-form__sign-me-checkbox"></span>
+                Sign me up to the Monstrum newsletter!
+              </label>
+            </div>
+          </form>
         </div>
       </div>
     </section>
@@ -504,7 +671,7 @@
         </div>
         <div class="footer-bottom grid">
           <div class="footer-bottom__info">
-            <a class="logo footer-bottom__logo" href="#">
+            <a class="footer-bottom__logo" href="#">
               <img class="logo-img" src="img/Logo Desktop.svg" alt="" />
             </a>
             <a class="footer-bottom__tel menu-font" href="tel:+4533221077"
