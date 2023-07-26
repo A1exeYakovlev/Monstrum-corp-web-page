@@ -1,9 +1,12 @@
 .contact-form {
   background-color: var(--background-light);
-  padding-bottom: calc(14rem + var(--section-rounded-top));
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in;
 
   &__inner {
-    margin: 10.4rem 0 0 0;
+    margin-top: 10.4rem;
+    margin-bottom: calc(var(--section-rounded-top) + 14rem);
   }
 
   &__content {

@@ -1,6 +1,6 @@
+//Menu links functionality
 const mobMenuAllBtnEl = document.querySelectorAll(".mob-menu-btn");
 
-//Menu links functionality
 document.querySelectorAll("nav").forEach(function (el) {
   el.addEventListener("click", function (event) {
     //Smooth scrolling
@@ -26,4 +26,19 @@ mobMenuAllBtnEl.forEach(function (el) {
   el.addEventListener("click", function () {
     document.querySelector("html").classList.toggle("open-mob-menu");
   });
+});
+
+//Open and close contact-form by Contact button
+const contactBtn = document.querySelector(".footer__talk-btn");
+const contactForm = document.querySelector(".contact-form");
+const footerSect = document.querySelector(".footer");
+
+contactBtn.addEventListener("click", function () {
+  if (contactForm.style.maxHeight) {
+    contactForm.style.maxHeight = null;
+    footerSect.classList.remove("rounded-corners--neg-margin");
+  } else {
+    contactForm.style.maxHeight = contactForm.scrollHeight + "px";
+    footerSect.classList.add("rounded-corners--neg-margin");
+  }
 });

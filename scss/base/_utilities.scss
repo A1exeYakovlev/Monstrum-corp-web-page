@@ -1,13 +1,17 @@
 .rounded-corners {
   border-radius: 9rem 9rem 0 0;
 
+  &--neg-margin {
+    margin-top: calc(var(--section-rounded-top) * -1);
+  }
+
   // 752px
   @media (max-width: 47em) {
     border-radius: 4rem 4rem 0 0;
   }
 
   &--white {
-    background-color: var(--text-white);
+    background-color: var(--background-white);
   }
 
   &--black {
