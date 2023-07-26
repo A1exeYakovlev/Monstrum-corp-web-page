@@ -3,10 +3,8 @@
   height: 3.2rem;
 
   //752px
-  &--mob-sm {
-    @media (max-width: 47em) {
-      width: 11.7rem;
-      height: 2.3rem;
-    }
+  @media (max-width: 47em) {
+    width: 11.7rem;
+    height: 2.3rem;
   }
 }
