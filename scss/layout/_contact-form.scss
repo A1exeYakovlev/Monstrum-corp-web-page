@@ -5,8 +5,18 @@
   transition: max-height 0.5s ease-in;
 
   &__inner {
-    margin-top: 10.4rem;
+    margin-top: var(--section-rounded-top);
     margin-bottom: calc(var(--section-rounded-top) + 14rem);
+
+    //752px
+    @media (max-width: 47em) {
+      margin-bottom: calc(var(--section-rounded-top) + 9rem);
+    }
+
+    //432px
+    @media (max-width: 27em) {
+      margin-bottom: calc(var(--section-rounded-top) + 7rem);
+    }
   }
 
   &__content {
@@ -17,6 +27,20 @@
 
   &__title {
     flex: 1 1 auto;
+
+    //752px
+    @media (max-width: 47em) {
+      text-align: center;
+    }
+
+    &-span {
+      display: block;
+
+      //752px
+      @media (max-width: 47em) {
+        display: inline;
+      }
+    }
   }
 
   &__input {
@@ -24,6 +48,18 @@
     row-gap: 2rem;
     &-item:nth-child(n + 3) {
       grid-column: span 2;
+    }
+
+    //752px
+    @media (max-width: 47em) {
+      display: grid;
+      margin-top: 4rem;
+    }
+
+    //528px
+    @media (max-width: 33em) {
+      display: block;
+      margin-top: 3rem;
     }
   }
 
@@ -34,6 +70,18 @@
     background: var(--background-white-2);
     border-radius: 9rem;
     border: none;
+
+    //752px
+    @media (max-width: 47em) {
+      padding: 1.9rem 4.35rem 1.9rem 3rem;
+      min-height: 7rem;
+      border-radius: 4rem;
+    }
+
+    //528px
+    @media (max-width: 33em) {
+      margin-bottom: 2rem;
+    }
   }
 
   &__textarea {
@@ -43,6 +91,18 @@
     background: var(--background-white-2);
     border-radius: 9rem;
     border: none;
+
+    //752px
+    @media (max-width: 47em) {
+      padding: 1.9rem 4.35rem 2.95rem 3rem;
+      min-height: 35rem;
+      border-radius: 4rem;
+    }
+
+    //528px
+    @media (max-width: 33em) {
+      min-height: 30rem;
+    }
   }
 
   &__long-button {
@@ -53,9 +113,45 @@
     position: relative;
     top: -0.65rem;
 
+    //752px
+    @media (max-width: 47em) {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-top: 2rem;
+    }
+
+    //528px
+    @media (max-width: 33em) {
+      display: block;
+
+      & p {
+        text-align: center;
+      }
+    }
+
+    &-span {
+      display: block;
+
+      //528px
+      @media (max-width: 33em) {
+        display: inline;
+      }
+    }
+
     a {
-      display: inline-block;
+      display: block;
       margin-top: 3.1rem;
+
+      //752px
+      @media (max-width: 47em) {
+        margin-top: 0.4rem;
+      }
+
+      //528px
+      @media (max-width: 33em) {
+        text-align: center;
+      }
     }
   }
 

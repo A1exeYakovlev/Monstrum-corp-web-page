@@ -42,3 +42,12 @@ contactBtn.addEventListener("click", function () {
     footerSect.classList.add("rounded-corners--neg-margin");
   }
 });
+
+//Recalculating contact-form height in case of window resizing
+const recalcContactForm = function () {
+  if (contactForm.style.maxHeight) {
+    contactForm.style.maxHeight = contactForm.scrollHeight + "px";
+  }
+};
+
+window.addEventListener("resize", recalcContactForm);

@@ -81,7 +81,7 @@ body {
 }
 
 .headline2 {
-  font-family: Clash Grotesk Variable;
+  font-family: "Clash Grotesk Variable";
   font-size: 10rem;
   font-weight: 400;
   color: var(--text-black);
@@ -90,6 +90,16 @@ body {
 
   &--color-text {
     color: var(--text-3);
+  }
+
+  //752px
+  @media (max-width: 47em) {
+    font-size: 5.2rem;
+  }
+
+  //432px
+  @media (max-width: 27em) {
+    font-size: 4rem;
   }
 }
 
