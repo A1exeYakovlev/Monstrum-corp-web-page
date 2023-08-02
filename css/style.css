@@ -779,6 +779,9 @@ body {
   text-align: center;
   color: var(--text-white);
 }
+.hero__title-span {
+  display: block;
+}
 .hero__logo {
   margin: 0.2rem 0 0 0.9rem;
 }
@@ -1612,8 +1615,11 @@ body {
 .footer-bottom__mail-item:not(:last-child) {
   margin-bottom: 1.5rem;
 }
-.footer-bottom__adress {
+.footer-bottom__address {
   flex: 1 1 auto;
+}
+.footer-bottom__address-span {
+  display: block;
 }
 .footer-bottom__copy {
   grid-column: 1/3;

@@ -37,6 +37,10 @@
   &__title {
     text-align: center;
     color: var(--text-white);
+
+    &-span {
+      display: block;
+    }
   }
 
   &__logo {

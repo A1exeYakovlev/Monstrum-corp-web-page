@@ -201,8 +201,12 @@
     }
   }
 
-  &__adress {
+  &__address {
     flex: 1 1 auto;
+
+    &-span {
+      display: block;
+    }
   }
 
   &__copy {
