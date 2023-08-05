@@ -1399,12 +1399,10 @@ body {
   cursor: pointer;
 }
 .contact-form__sign-me-checkbox {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-right: 2rem;
   width: 4rem;
   height: 4rem;
+  position: relative;
   border: none;
   border-radius: 1rem;
   background-color: var(--background-white-2);
@@ -1413,8 +1411,12 @@ body {
   content: "";
   display: inline-block;
   height: 3.2rem;
-  width: 3.2rem;
-  background-image: url(../img/contact-form__mark.svg);
+  width: 3.6rem;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url(../img/contact-form__mark.svg) center/cover no-repeat;
   opacity: 0;
   transition: opacity 0.3s;
 }
