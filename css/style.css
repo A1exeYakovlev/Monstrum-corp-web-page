@@ -1822,12 +1822,21 @@ body {
   background-color: transparent;
   color: var(--text-white);
   cursor: pointer;
+  transition: font-size 0.3s, opacity 0.3s, color 0.3s, background-color 0.3s;
 }
 @media (max-width: 47em) {
   .circle-button {
     height: 12.4rem;
     width: 12.4rem;
   }
+}
+.circle-button:hover {
+  font-size: 2.4em;
+}
+.circle-button:active {
+  opacity: 0.95;
+  color: var(--text-black);
+  background-color: var(--text-white);
 }
 
 .long-button {
@@ -1838,11 +1847,19 @@ body {
   border: 1px solid var(--element-black);
   border-radius: 7.4rem;
   background-color: transparent;
+  transition: background-color 0.3s, color 0.3s, opacity 0.3s;
 }
 @media (max-width: 47em) {
   .long-button {
     height: 8rem;
   }
+}
+.long-button:hover {
+  background-color: var(--element-black);
+  color: var(--text-white);
+}
+.long-button:active {
+  opacity: 0.95;
 }
 
 .mob-menu-btn {
