@@ -493,8 +493,15 @@ body {
 .menu-font--black {
   color: var(--text-black);
 }
-.menu-font:hover {
-  opacity: 1;
+@media (hover: hover) {
+  .menu-font:hover {
+    opacity: 1;
+  }
+}
+@media (hover: none) {
+  .menu-font:active {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 63em) {
@@ -1830,8 +1837,10 @@ body {
     width: 12.4rem;
   }
 }
-.circle-button:hover {
-  font-size: 2.4em;
+@media (hover: hover) {
+  .circle-button:hover {
+    font-size: 2.4em;
+  }
 }
 .circle-button:active {
   opacity: 0.95;
@@ -1854,12 +1863,20 @@ body {
     height: 8rem;
   }
 }
-.long-button:hover {
-  background-color: var(--element-black);
-  color: var(--text-white);
+@media (hover: hover) {
+  .long-button:hover {
+    background-color: var(--element-black);
+    color: var(--text-white);
+  }
+  .long-button:active {
+    opacity: 0.95;
+  }
 }
-.long-button:active {
-  opacity: 0.95;
+@media (hover: none) {
+  .long-button:active {
+    background-color: var(--element-black);
+    color: var(--text-white);
+  }
 }
 
 .mob-menu-btn {

@@ -25,9 +25,16 @@ body {
   &--black {
     color: var(--text-black);
   }
+  @media (hover: hover) {
+    &:hover {
+      opacity: 1;
+    }
+  }
 
-  &:hover {
-    opacity: 1;
+  @media (hover: none) {
+    &:active {
+      opacity: 1;
+    }
   }
 }
 

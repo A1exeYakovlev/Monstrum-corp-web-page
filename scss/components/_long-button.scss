@@ -13,12 +13,21 @@
     height: 8rem;
   }
 
-  &:hover {
-    background-color: var(--element-black);
-    color: var(--text-white);
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--element-black);
+      color: var(--text-white);
+    }
+
+    &:active {
+      opacity: 0.95;
+    }
   }
 
-  &:active {
-    opacity: 0.95;
+  @media (hover: none) {
+    &:active {
+      background-color: var(--element-black);
+      color: var(--text-white);
+    }
   }
 }
