@@ -16,6 +16,7 @@ body {
   text-transform: uppercase;
   color: var(--text-white);
   opacity: 0.6;
+  transition: opacity 0.3s;
 
   &--opacity1 {
     opacity: 1;
@@ -23,6 +24,10 @@ body {
 
   &--black {
     color: var(--text-black);
+  }
+
+  &:hover {
+    opacity: 1;
   }
 }
 
