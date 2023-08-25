@@ -1,0 +1,29 @@
+.marquee {
+  display: flex;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    animation: marquee 20s linear infinite;
+
+    //752px
+    @media (max-width: 47em) {
+      animation: marquee 25s linear infinite;
+    }
+  }
+
+  &__text {
+    white-space: nowrap;
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}

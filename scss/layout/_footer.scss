@@ -3,14 +3,18 @@
   z-index: 2;
   background-color: var(--element-black);
   transition: margin-top 0.5s ease-in;
+  overflow: hidden;
 
   &__marquee {
-    min-height: 13.4rem;
     border-bottom: 1px var(--text-white) solid;
 
-    //752px
-    @media (max-width: 47em) {
-      min-height: 5.6rem;
+    &-inner {
+      min-height: 13.4rem;
+
+      //752px
+      @media (max-width: 47em) {
+        min-height: 5.6rem;
+      }
     }
   }
 

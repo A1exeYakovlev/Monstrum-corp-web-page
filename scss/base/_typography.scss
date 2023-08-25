@@ -154,6 +154,10 @@ body {
     line-height: 100%;
   }
 
+  &--white {
+    color: var(--text-white);
+  }
+
   // 752px
   @media (max-width: 47em) {
     font-size: 1.6rem;
